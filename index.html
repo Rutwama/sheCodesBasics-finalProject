@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>       
+        body{
+            padding: 20px;
+        }
+
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(106.7deg, rgb(245, 167, 191) -6.2%, rgb(201, 218, 238) 46.4%, rgb(164, 240, 229) 86.4%);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: rgba(0, 0, 0, 0.793);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.793);
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 450px;
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.793);
+            margin: 0 20px;
+        }
+
+        .link {
+            margin-top: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(165, 42, 42, 0.746);
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        a:hover {
+            color: rgba(0, 128, 119, 0.784);
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto;
+            background-color: rgba(165, 42, 42, 0.746);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            transition: 200ms;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        button:hover {
+            background-color: rgba(0, 128, 119, 0.784);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>I Love Chocolate.</h1>
+        </div>
+        <div>
+            <h2> especially Chocolate Cake!</h2>
+        </div>
+        <hr>
+        <div>
+            <img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/323/original/chocolate.jpg?1683713120'
+                alt="Chocolate Cake">
+        </div>
+        <hr>
+        <div>
+            <p>
+                <strong>Chocolate</strong> is a food product made from the fruit of a cacao tree. <br>
+                Raw, unprocessed chocolate tastes bitter and dry,
+                but when fermented, dried, and roasted, then had a bit of sugar and cream added to it,
+                <em>tastes divine!!</em>😋<br>
+                People around the world enjoy chocolate and use it in an enormous variety of foods.
+                More than half of all the chocolate we consume comes from West African countries, primarily
+                <strong>Ghana</strong> and <strong>Cote d'Ivoire</strong>.
+            </p>
+        </div>
+        <div class="link">
+            <a href="https://www.livescience.com/39733-reasons-chocolate-good-health.html" target="_blank">Read about
+                the benefits of Chocolate 🍫</a>
+        </div>
+        <button>Buy Our Chocolate</button>
+    </div>
+    <script>
+        function personalInfo(){
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            let purchase = prompt("How many bars of chocolate would you like to purchase?");
+            alert(`Thank you ${name} for your purchase of ${purchase} bars of chocolate. We will send you a confirmation email at ${email}.`);
+        }
+
+        const button = document.querySelector("button");
+        button.addEventListener("click", personalInfo);
+    </script>
+</body>
+
+</html>
